@@ -222,16 +222,8 @@ function renderResumeCard(data) {
 // --- Render profile image (public) ---
 function renderProfileCard(data) {
   const avatarImg = document.getElementById('avatarImg');
-  const avatarFallback = document.getElementById('avatarFallback');
-  if (data && data.dataUrl) {
-    avatarImg.src = data.dataUrl;
-    avatarImg.style.display = 'block';
-    avatarFallback.style.display = 'none';
-  } else {
-    avatarImg.src = 'assets/profile.jpeg';
-    avatarImg.style.display = '';
-    avatarFallback.style.display = '';
-  }
+  avatarImg.src = 'assets/profile.jpeg';
+  avatarImg.style.display = 'block';
 }
 
 // --- Render certs grid (public) ---
